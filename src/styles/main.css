@@ -1,10 +1,96 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
-  padding: 20px;
-  text-align: center;
+/* Base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-button {
-  padding: 10px 20px;
-  font-size: 16px;
+
+body {
+  font-family: "Fira Code", monospace;
+  background-color: #1e1e1e; /* terminal-like background */
+  color: #dcdccc; /* org-mode inspired foreground */
+  line-height: 1.7;
+  padding: 2rem;
+  margin: auto;
+}
+
+/* Link styling (org-mode / emacs style) */
+a {
+  color: #61afef; /* org hyperlink blue */
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  color: #98c379; /* green on hover */
+  text-decoration: underline;
+}
+
+/* Headers */
+h1, h2, h3 {
+  color: #ffaf87;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.2rem;
+  border-bottom: 1px dashed #444;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: #c678dd; /* magenta */
+  margin: 1rem 0 0.5rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Email + RSS */
+.email-link {
+  color: #d19a66;
+  font-size: 0.95rem;
+}
+.email-link:hover {
+  color: #e5c07b;
+}
+
+/* Home section container */
+.home-section {
+  padding: 1.5rem;
+  border: 1px solid #3e3e3e;
+  background-color: #262626;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px #2e2e2e;
+}
+
+/* Lists */
+ul {
+  list-style-type: "➤ ";
+  padding-left: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Donut image (ko-fi badge) */
+.donut-powered {
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  border: 1px solid #444;
+}
+.donut-powered:hover {
+  transform: scale(1.05);
 }
